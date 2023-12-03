@@ -1,0 +1,195 @@
+.footer {
+    padding: 70px 0 80px;
+    background: url('../img/bg-footer.png') no-repeat center / cover;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+
+        @media (max-width: 991px) {
+            gap: 50px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        gap: 80px;
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 210px;
+        width: 100%;
+
+        @media (max-width: 767px) {
+            align-items: center;
+            text-align: center;
+        }
+
+        &__header {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+
+            svg {
+                width: 46px;
+                height: 46px;
+            }
+
+            span {
+                color: #FFF;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.12px;
+                text-transform: uppercase;
+            }
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            p {
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.13px;
+            }
+        }
+    }
+
+    &__meta {
+        flex: 1;
+
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            color: #FFF;
+            text-align: right;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.4px;
+            text-transform: uppercase;
+
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+        }
+
+        p {
+            color: #FFF;
+            text-align: right;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.18px;
+
+            @media (max-width: 991px) {
+                text-align: center;
+            }
+        }
+    }
+
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 30px;
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: #FFF;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.08px;
+            text-transform: uppercase;
+
+            &:hover {
+                color: #00A8FF;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__phone {
+        margin-left: auto;
+        color: #FFF;
+        font-family: Open Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.9px;
+
+        @media (max-width: 991px) {
+            margin-left: 0;
+        }
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        margin-left: 25px;
+        padding: 10px 25px;
+        border-radius: 17px;
+        border: 1px solid #00A8FF;
+        color: #FFF;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &:hover {
+            background: #00A8FF;
+            color: white;
+        }
+
+        @media (max-width: 991px) {
+            margin-left: 0;
+        }
+    }
+}
