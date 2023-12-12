@@ -292,6 +292,9 @@
                 text-transform: uppercase;
             }
         }
+        .item-hidden {
+            display: none;
+        }
     }
 
     &__more {
